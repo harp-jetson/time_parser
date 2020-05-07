@@ -25,7 +25,7 @@ def main():
     parser.add_argument("-ptd", "--plot_daily", type = bool, help = "flag to plot the daily summary over time in line graph")
     args = parser.parse_args()
     if args.file == None:
-        args.file = "time.yaml"
+        args.file = "Time.yaml.txt"
     calendar, all_activities = put_everything_in_a_list_of_dicts(args.file, calendar, all_activities)
 
     if args.print_daily: #or args.plot_daily:
